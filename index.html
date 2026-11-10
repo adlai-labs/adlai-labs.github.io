@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adlai labs | Official Site</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(99, 102, 241, 0.2);
+            animation: fadeIn 1s ease-out;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.5));
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        .tagline span {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        /* 役員表テーブルのスタイル */
+        .officers-section {
+            margin-top: 30px;
+        }
+        .officers-section h2 {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            text-align: left;
+            border-left: 4px solid #818cf8;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        th, td {
+            padding: 16px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(99, 102, 241, 0.2);
+            color: #38bdf8;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: background 0.3s ease;
+        }
+        tr:last-child {
+            border-bottom: none;
+        }
+        tr:hover {
+            background: rgba(99, 102, 241, 0.1);
+        }
+        .role {
+            font-weight: bold;
+            color: #c084fc;
+        }
+        .name {
+            color: #f8fafc;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="background: none; -webkit-text-fill-color: initial;">
+            <span style="color: #ef4444; filter: drop-shadow(0 0 12px #ef4444); font-weight: 800;">A</span><span style="background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">dlai labs</span>
+        </h1>
+
+        <p class="tagline">🚀 次世代のWeb開発を牽引する、<span>最強の最先端テクノロジー団体</span></p>
+        
+        <!-- 役員表（Officers Table） -->
+        <div class="officers-section">
+            <h2>役員一覧 / Executive Officers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>役職 (Role)</th>
+                        <th>氏名 (Name)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="role">代表取締役社長 (CEO)</td>
+                        <td class="name">アドレイ社長 (@adlai-stevenson2)</td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td class="role">取締役副社長 (Vice President)</td>
+                        <td class="name">ロボトン副社長 (@roboton-kun)</td>
+                    </tr>
+                -->
+                </tbody>
+            </table>
+
+                    <!-- 追加要素1：事業内容 -->
+        <div class="officers-section" style="margin-top: 40px;">
+            <h2>事業内容 / Our Focus</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 15px;">
+                <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: #38bdf8; margin-bottom: 8px;">🎮 Next-Gen Gaming</h3>
+                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.5;">JavaScriptや最先端フレームワークを駆使した、ブラウザで軽快に動作する大規模シミュレーションゲームの開発。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h3 style="color: #c084fc; margin-bottom: 8px;">🌐 Web Solutions</h3>
+                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.5;">無駄な装飾や重い処理を徹底的に排除し、圧倒的な高速性とプライバシー保護を両立したWebサイト・ツールの構築。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 追加要素2：開発ロードマップ -->
+        <div class="officers-section" style="margin-top: 40px;">
+            <h2>開発ロードマップ / Roadmap</h2>
+            <ul style="text-align: left; list-style: none; margin-top: 15px; background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                <li style="margin-bottom: 12px; color: #38bdf8; font-weight: bold;">[Phase 1] 🏢 組織基盤の確立と公式サイトの公開 <span style="color: #4ade80; font-size: 0.85rem; margin-left: 10px;">● Complete</span></li>
+                <li style="margin-bottom: 12px; color: #cbd5e1;">[Phase 2] 🕹️ ブラウザコンソール等で実行可能な便利ツールのプロトタイプ開発 <span style="color: #fbbf24; font-size: 0.85rem; margin-left: 10px;">● In Progress</span></li>
+                <li style="color: #94a3b8;">[Phase 3] 🌍 大規模ライフシミュレーション・経済システムの設計・実装開始</li>
+            </ul>
+        </div>
+
+                <!-- 追加要素3：AI連携・開発環境 -->
+        <div class="officers-section" style="margin-top: 40px;">
+            <h2>開発環境 / Infrastructure</h2>
+            <div style="text-align: left; margin-top: 15px; background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.1); font-family: monospace; font-size: 0.9rem; color: #a5b4fc;">
+                <p style="margin-bottom: 6px;"><span style="color: #38bdf8;">$</span> adlai-labs-agent --status</p>
+                <p style="color: #4ade80; margin-bottom: 12px;">> AI Coding Agent Platform: ACTIVE (Secure Workflow Mode)</p>
+                <p><span style="color: #38bdf8;">$</span> cat system_info.json</p>
+                <p style="color: #94a3b8;">{ "env": "Tauri/Vite", "database": "Dexie.js", "hosting": "GitHub Pages" }</p>
+            </div>
+        </div>
+
+        <!-- 追加要素4：公式フッター -->
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: #64748b; font-size: 0.85rem;">
+<p>© <span id="current-year"></span> Adlai labs. All Rights Reserved.</p>
+
+<script>
+  // 現在の西暦を自動で取得して挿入
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+  console.log(document.getElementById("current-year").textContent);
+</script>
+            <p style="margin-top: 5px; color: #475569;">Managed by Executive Officers</p>
+        </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
